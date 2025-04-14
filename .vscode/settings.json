@@ -1,0 +1,4 @@
+{
+    "idf.port": "/dev/tty.usbmodem14201",
+    "idf.flashType": "JTAG"
+}

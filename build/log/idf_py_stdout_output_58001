@@ -1,0 +1,232 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403d067c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x17d4
+load:0x403cc710,len:0x998
+load:0x403ce710,len:0x3154
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.6-354-gfb2a72fd53 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 14 2025 19:52:31[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (71) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (79) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (86) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (94) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (101) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (109) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (116) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (124) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (131) boot: End of partition table[0m
+[0;32mI (136) boot: No factory image, trying OTA 0[0m
+[0;32mI (140) esp_image: segment 0: paddr=00020020 vaddr=3c130020 size=4b7c8h (309192) map[0m
+[0;32mI (199) esp_image: segment 1: paddr=0006b7f0 vaddr=3fc99800 size=03688h ( 13960) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=0006ee80 vaddr=40380000 size=01198h (  4504) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=12a520h (1221920) map[0m
+[0;32mI (412) esp_image: segment 4: paddr=0019a548 vaddr=40381198 size=18608h ( 99848) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (479) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (479) boot: Disabling RNG early entropy source...[0m
+[0;32mI (490) cpu_start: Unicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (499) cpu_start: Pro cpu start user code[0m
+[0;32mI (499) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (499) cpu_start: Application information:[0m
+[0;32mI (502) cpu_start: Project name:     iot_project[0m
+[0;32mI (507) cpu_start: App version:      1.4[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  0f2b09f04e2fe725...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.6-354-gfb2a72fd53[0m
+[0;32mI (524) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (529) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (534) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (538) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (546) heap_init: At 3FCA4660 len 0001B9A0 (110 KiB): DRAM[0m
+[0;32mI (552) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (559) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (567) heap_init: At 5000189C len 0000074C (1 KiB): RTCRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (582) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (592) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (599) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (606) coexist: coex firmware version: 68cf3ac[0m
+[0;32mI (611) coexist: coexist rom version 9387209[0m
+[0;32mI (616) app_start: Starting scheduler on CPU0[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (621) main_task: Calling app_main()[0m
+[0;32mI (621) esp_rmaker_console: Initialising UART on port 0[0m
+[0;32mI (631) uart: queue free spaces: 8[0m
+[0;32mI (631) esp_rmaker_commands: Registering command: reboot[0m
+[0;32mI (641) esp_rmaker_commands: Registering command: up-time[0m
+[0;32mI (651) esp_rmaker_commands: Registering command: mem-dump[0m
+[0;32mI (651) esp_rmaker_commands: Registering command: task-dump[0m
+[0;32mI (661) esp_rmaker_commands: Registering command: cpu-dump[0m
+[0;32mI (661) esp_rmaker_commands: Registering command: sock-dump[0m
+[0;32mI (671) esp_rmaker_commands: Registering command: heap-trace[0m
+[0;32mI (681) esp_rmaker_commands: Registering command: reset-to-factory[0m
+[0;32mI (681) esp_rmaker_commands: Registering command: local-time[0m
+[0;32mI (691) esp_rmaker_commands: Registering command: tz-set[0m
+[0;32mI (701) esp_rmaker_commands: Registering command: add-user[0m
+[0;32mI (701) esp_rmaker_commands: Registering command: get-node-id[0m
+[0;32mI (711) esp_rmaker_commands: Registering command: wifi-prov[0m
+[0;32mI (711) esp_rmaker_commands: Registering command: cmd[0m
+[0;32mI (721) esp_rmaker_commands: Registering command: sign-data[0m
+[0;32mI (731) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (741) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (751) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (751) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (761) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (791) pp: pp rom version: 9387209[0m
+[0;32mI (791) net80211: net80211 rom version: 9387209[0m
+[0;32mI (801) wifi:wifi driver task: 3fcb157c, prio:23, stack:6656, core=0[0m
+[0;32mI (801) wifi:wifi firmware version: 82c12cc[0m
+[0;32mI (801) wifi:wifi certification version: v7.0[0m
+[0;32mI (801) wifi:config NVS flash: enabled[0m
+[0;32mI (801) wifi:config nano formating: disabled[0m
+[0;32mI (811) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (811) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (811) wifi:Init management short buffer num: 32[0m
+[0;32mI (821) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (821) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (831) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (831) wifi:Init static rx buffer num: 10[0m
+[0;32mI (841) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (841) wifi_init: rx ba win: 6[0m
+[0;32mI (841) wifi_init: tcpip mbox: 32[0m
+[0;32mI (851) wifi_init: udp mbox: 6[0m
+[0;32mI (851) wifi_init: tcp mbox: 6[0m
+[0;32mI (851) wifi_init: tcp tx win: 5760[0m
+[0;32mI (861) wifi_init: tcp rx win: 5760[0m
+[0;32mI (861) wifi_init: tcp mss: 1440[0m
+[0;32mI (871) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (871) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (881) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (891) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|64E83383ECC4[0m
+[0;32mI (891) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (891) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (911) app_main: Event received: RMAKER_EVENT - ID: 1[0m
+[0;32mI (911) esp_rmaker_node: Node ID ----- 64E83383ECC4[0m
+[0;32mI (921) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (921) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (931) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (941) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (941) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (951) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (961) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (981) heap_metrics: free:0x23278 lfb:0x1c000 min_free_ever:0x23274[0m
+[0;32mI (981) esp_insights: =========================================[0m
+[0;32mI (981) esp_insights: Insights enabled for Node ID 64E83383ECC4[0m
+[0;32mI (991) esp_insights: =========================================[0m
+[0;31mE (991) insights_cmd_resp: Please enable CONFIG_ESP_INSIGHTS_CMD_RESP_ENABLED=y, line 675[0m
+[0;31mE (1001) app_insights: Failed to enabled insights command response[0m
+[0;32mI (1011) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (1021) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (1021) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (1031) tag: 0x3fcbd3bc   e5 02 4e 6f 76 61 00 01  00 80 01 00              |..Nova......|[0m
+[0;32mI (1041) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (1041) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (1051) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (1061) esp_rmaker_local: Event 6[0m
+[0;32mI (1061) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (1101) wifi:mode : sta (64:e8:33:83:ec:c4)[0m
+[0;32mI (1111) wifi:enable tsf[0m
+[0;32mI (3511) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3521) wifi:state: init -> auth (b0)[0m
+[0;32mI (3521) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3531) wifi:state: assoc -> run (10)[0m
+[0;32mI (3581) wifi:connected with tharshen, aid = 2, channel 6, BW20, bssid = d2:ff:b0:dc:55:c4[0m
+[0;32mI (3581) wifi:security: WPA2-PSK, phy: bgn, rssi: -72[0m
+[0;32mI (3581) wifi:pm start, type: 1[0m
+
+[0;32mI (3591) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3591) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (3791) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (3801) wifi_metrics: Wi-Fi RSSI crossed threshold -71[0m
+[0;32mI (5101) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5101) app_network: Connected with IP Address:172.20.10.5[0m
+[0;32mI (5101) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (5111) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (5111) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (5121) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (5121) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (5141) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5141) esp_https_server: Starting server[0m
+[0;32mI (5151) esp_https_server: Server listening on port 8080[0m
+[0;32mI (5151) esp_rmaker_local: esp_local_ctrl service started with name : 64E83383ECC4[0m
+[0;32mI (5161) app_main: Event received: RMAKER_EVENT - ID: 6[0m
+[0;32mI (5171) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (5171) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (5181) main_task: Returned from app_main()[0m
+[0;32mI (5211) wifi:<ba-add>idx:0 (ifx:0, d2:ff:b0:dc:55:c4), tid:0, ssn:2, winSize:64[0m
+[0;32mI (6261) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (8341) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (8341) app_main: Event received: RMAKER_COMMON_EVENT - ID: 3[0m
+[0;32mI (8341) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (8351) esp_rmaker_node_config: Generated Node config of length 1724[0m
+[0;32mI (8361) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (8361) esp_rmaker_param: Reporting params (init): {"Lights":{"Name":"Lights","Power":false},"Intruder Alert Reset":{"Reset":false,"Intruder_Status":"Clear"},"Time":{"TZ":"Asia/Kuala_Lumpur","TZ-POSIX":"<+08>-8"},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]},"Local Control":{"POP":"58659ea1","Type":1}}[0m
+[0;32mI (8391) esp_rmaker_ota_using_topics: Subscribing to: node/64E83383ECC4/otaurl[0m
+[0;32mI (8401) esp_insights: Scheduling Insights timer for 60 seconds.[0m
+[0;32mI (8401) esp_insights: Insights metadata changed[0m
+[0;32mI (8731) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (8741) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (8741) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (9021) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (9031) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (9531) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (13401) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (13731) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (30981) heap_metrics: free:0x17fcc lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (30981) wifi_metrics: Wi-Fi RSSI crossed threshold -72[0m
+[0;32mI (30981) wifi_metrics: rssi:-72 min_rssi_ever:-72[0m
+[0;32mI (31751) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (31751) esp_rmaker_time: The current time is: Mon Apr 14 20:28:18 2025 +0800[+08], DST: No.[0m
+[0;32mI (60981) heap_metrics: free:0x17fcc lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (60981) wifi_metrics: rssi:-69 min_rssi_ever:-72[0m
+[0;32mI (68821) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (73941) wifi_metrics: Wi-Fi RSSI crossed threshold -74[0m
+[0;32mI (90981) heap_metrics: free:0x17f68 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (90981) wifi_metrics: rssi:-70 min_rssi_ever:-74[0m
+[0;32mI (120981) heap_metrics: free:0x17f68 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (120981) wifi_metrics: rssi:-70 min_rssi_ever:-74[0m
+[0;32mI (130561) wifi_metrics: Wi-Fi RSSI crossed threshold -75[0m
+[0;32mI (150981) heap_metrics: free:0x17f68 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (150981) wifi_metrics: rssi:-68 min_rssi_ever:-75[0m
+[0;32mI (180981) heap_metrics: free:0x17f50 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (180981) wifi_metrics: rssi:-70 min_rssi_ever:-75[0m
+[0;32mI (188831) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (210981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (210981) wifi_metrics: rssi:-75 min_rssi_ever:-75[0m
+[0;32mI (237771) wifi_metrics: Wi-Fi RSSI crossed threshold -76[0m
+[0;32mI (240981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (240981) wifi_metrics: rssi:-75 min_rssi_ever:-76[0m
+[0;32mI (270981) heap_metrics: free:0x17f50 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (270981) wifi_metrics: rssi:-65 min_rssi_ever:-76[0m
+[0;32mI (300981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (300981) wifi_metrics: rssi:-67 min_rssi_ever:-76[0m
+[0;32mI (330981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (330981) wifi_metrics: rssi:-76 min_rssi_ever:-76[0m
+[0;32mI (360981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (360981) wifi_metrics: rssi:-66 min_rssi_ever:-76[0m
+[0;32mI (390981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (390981) wifi_metrics: rssi:-71 min_rssi_ever:-76[0m
+[0;32mI (420981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (420981) wifi_metrics: rssi:-69 min_rssi_ever:-76[0m
+[0;32mI (421681) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (428951) app_main: Event received: RMAKER_COMMON_EVENT - ID: 5[0m
+[0;32mI (450981) heap_metrics: free:0x17f50 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (450981) wifi_metrics: rssi:-68 min_rssi_ever:-76[0m
+[0;32mI (480981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (480981) wifi_metrics: rssi:-68 min_rssi_ever:-76[0m
+[0;32mI (510981) heap_metrics: free:0x17f74 lfb:0x13000 min_free_ever:0x13384[0m
+[0;32mI (510981) wifi_metrics: rssi:-70 min_rssi_ever:-76[0m

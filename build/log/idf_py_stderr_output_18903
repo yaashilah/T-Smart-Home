@@ -1,0 +1,13 @@
+CMake Error at /Users/tharshen/esp/esp-idf/tools/cmake/build.cmake:548 (message):
+  WARNING: Component "espressif/esp-insights" not found
+
+  WARNING: Component "espressif/esp-insights" not found
+
+  ERROR: Because project depends on espressif/esp-insights (^1.0.0) which
+  doesn't match any versions, version solving failed.
+
+Call Stack (most recent call first):
+  /Users/tharshen/esp/esp-idf/tools/cmake/project.cmake:604 (idf_build_process)
+  CMakeLists.txt:15 (project)
+
+

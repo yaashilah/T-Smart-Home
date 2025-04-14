@@ -1,0 +1,24 @@
+# Ignore dev folders
+.vscode/
+../fan/.vscode/
+../switch/.vscode/
+
+# Ignore IDE and meta
+*.zip
+*.log
+*.csv
+
+# Ignore build and config
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.*.bak
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore default files copied from other projects
+main/component.mk
+main/idf_component.yml
+Makefile
+file_tree.txt

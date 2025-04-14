@@ -1,0 +1,8 @@
+CMake Error at /Users/tharshen/esp/esp-idf/tools/cmake/project.cmake:406 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  /Users/tharshen/.espressif/esp-rainmaker/examples/iot_project/components/esp-insights
+Call Stack (most recent call first):
+  /Users/tharshen/esp/esp-idf/tools/cmake/project.cmake:490 (__project_init)
+  CMakeLists.txt:16 (project)
+
+

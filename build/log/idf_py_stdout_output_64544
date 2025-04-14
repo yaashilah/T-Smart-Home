@@ -1,0 +1,116 @@
+[1/6] cd /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/esp-idf/esptool_py && /Users/tharshen/.espressif/python_env/idf5.1_py3.12_env/bin/python /Users/tharshen/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/partition_table/partition-table.bin /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/iot_project.bin
+iot_project.bin binary size 0x18ea00 bytes. Smallest app partition is 0x1e0000 bytes. 0x51600 bytes (17%) free.
+[2/6] Performing build step for 'bootloader'
+[1/1] cd /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/bootloader/esp-idf/esptool_py && /Users/tharshen/.espressif/python_env/idf5.1_py3.12_env/bin/python /Users/tharshen/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/bootloader/bootloader.bin
+Bootloader binary size 0x5320 bytes. 0x6ce0 bytes (57%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[5/6] Running utility command for app
+===================== Generating insights firmware package build/iot_project-v1a712a0-dirty.zip ======================
+iot_project-v1a712a0-dirty
+iot_project-v1a712a0-dirty/sdkconfig
+iot_project-v1a712a0-dirty/partition_table
+iot_project-v1a712a0-dirty/partition_table/partition-table.bin
+iot_project-v1a712a0-dirty/iot_project.bin
+iot_project-v1a712a0-dirty/bootloader
+iot_project-v1a712a0-dirty/bootloader/bootloader.bin
+iot_project-v1a712a0-dirty/iot_project.elf
+iot_project-v1a712a0-dirty/project_build_config.json
+iot_project-v1a712a0-dirty/partitions_4mb_optimised.csv
+iot_project-v1a712a0-dirty/flash_args
+iot_project-v1a712a0-dirty/ota_data_initial.bin
+iot_project-v1a712a0-dirty/project_description.json
+iot_project-v1a712a0-dirty/iot_project.map
+[5/6] cd /Users/tharshen/esp/esp-idf/components/esptool_py && /Users/tharshen/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/tharshen/esp/esp-idf -D "SERIAL_TOOL=/Users/tharshen/.espressif/python_env/idf5.1_py3.12_env/bin/python;;/Users/tharshen/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/tharshen/esp/esp-rainmaker/examples/iot_project/build -P /Users/tharshen/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/tty.usbmodem14301 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 iot_project.bin 0xc000 partition_table/partition-table.bin 0x16000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port /dev/tty.usbmodem14301
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: 64:e8:33:83:ec:c4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x001aefff...
+Flash will be erased from 0x0000c000 to 0x0000cfff...
+Flash will be erased from 0x00016000 to 0x00017fff...
+SHA digest in image updated
+Compressed 21280 bytes to 13019...
+Writing at 0x00000000... (100 %)
+Wrote 21280 bytes (13019 compressed) at 0x00000000 in 0.4 seconds (effective 463.7 kbit/s)...
+Hash of data verified.
+Compressed 1632768 bytes to 890889...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002d579... (3 %)
+Writing at 0x0003be11... (5 %)
+Writing at 0x00045bfc... (7 %)
+Writing at 0x0004d319... (9 %)
+Writing at 0x00059114... (10 %)
+Writing at 0x0006329d... (12 %)
+Writing at 0x0006e343... (14 %)
+Writing at 0x00074aee... (16 %)
+Writing at 0x0007c231... (18 %)
+Writing at 0x000841b0... (20 %)
+Writing at 0x0008b84d... (21 %)
+Writing at 0x00092516... (23 %)
+Writing at 0x00099e52... (25 %)
+Writing at 0x000a2225... (27 %)
+Writing at 0x000a9cbf... (29 %)
+Writing at 0x000b0fd3... (30 %)
+Writing at 0x000b81e0... (32 %)
+Writing at 0x000bef19... (34 %)
+Writing at 0x000c610e... (36 %)
+Writing at 0x000cd017... (38 %)
+Writing at 0x000d392f... (40 %)
+Writing at 0x000db046... (41 %)
+Writing at 0x000e241e... (43 %)
+Writing at 0x000e9263... (45 %)
+Writing at 0x000effb4... (47 %)
+Writing at 0x000f72f8... (49 %)
+Writing at 0x000fe0e6... (50 %)
+Writing at 0x00104fe6... (52 %)
+Writing at 0x0010c609... (54 %)
+Writing at 0x0011399a... (56 %)
+Writing at 0x0011a019... (58 %)
+Writing at 0x00120923... (60 %)
+Writing at 0x001272d8... (61 %)
+Writing at 0x0012de57... (63 %)
+Writing at 0x00134660... (65 %)
+Writing at 0x0013ac76... (67 %)
+Writing at 0x00140c20... (69 %)
+Writing at 0x00146c4a... (70 %)
+Writing at 0x0014cc36... (72 %)
+Writing at 0x00153169... (74 %)
+Writing at 0x00159613... (76 %)
+Writing at 0x0015f815... (78 %)
+Writing at 0x00165d9d... (80 %)
+Writing at 0x0016bf1f... (81 %)
+Writing at 0x0017222a... (83 %)
+Writing at 0x00178648... (85 %)
+Writing at 0x0017e547... (87 %)
+Writing at 0x00184399... (89 %)
+Writing at 0x0018b99a... (90 %)
+Writing at 0x00191df4... (92 %)
+Writing at 0x00198a5a... (94 %)
+Writing at 0x0019eee6... (96 %)
+Writing at 0x001a5e0c... (98 %)
+Writing at 0x001ac1ba... (100 %)
+Wrote 1632768 bytes (890889 compressed) at 0x00020000 in 11.8 seconds (effective 1110.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 198...
+Writing at 0x0000c000... (100 %)
+Wrote 3072 bytes (198 compressed) at 0x0000c000 in 0.0 seconds (effective 512.2 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00016000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00016000 in 0.1 seconds (effective 703.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

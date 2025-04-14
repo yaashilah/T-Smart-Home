@@ -1,0 +1,7 @@
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Manifest files have changed, solving dependencies.
+NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/esp/esp-rainmaker/examples/iot_project/main/idf_component.yml
+................NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_insights/idf_component.yml
+.......NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/esp/esp-rainmaker/examples/iot_project/main/idf_component.yml
+................NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_insights/idf_component.yml
+.........-- Configuring incomplete, errors occurred!

@@ -1,0 +1,290 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xe (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40058836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x17d4
+load:0x403cc710,len:0x998
+load:0x403ce710,len:0x3154
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.6-354-gfb2a72fd53 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 14 2025 12:08:14[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (71) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (79) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (86) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (94) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (101) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (109) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (116) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (124) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (131) boot: End of partition table[0m
+[0;32mI (136) boot: No factory image, trying OTA 0[0m
+[0;32mI (140) esp_image: segment 0: paddr=00020020 vaddr=3c130020 size=4a700h (304896) map[0m
+[0;32mI (199) esp_image: segment 1: paddr=0006a728 vaddr=3fc99800 size=03688h ( 13960) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=0006ddb8 vaddr=40380000 size=02260h (  8800) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=125274h (1200756) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=0019529c vaddr=40382260 size=174f8h ( 95480) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (473) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (473) boot: Disabling RNG early entropy source...[0m
+[0;32mI (484) cpu_start: Unicore app[0m
+[0;32mI (484) cpu_start: Pro cpu up.[0m
+[0;32mI (493) cpu_start: Pro cpu start user code[0m
+[0;32mI (493) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (493) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     iot_project[0m
+[0;32mI (501) cpu_start: App version:      1.2.1.1[0m
+[0;32mI (506) cpu_start: ELF file SHA256:  f035de2d61649f85...[0m
+[0;32mI (512) cpu_start: ESP-IDF:          v5.1.6-354-gfb2a72fd53[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (523) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (528) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (540) heap_init: At 3FCA4050 len 0001BFB0 (111 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (553) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (561) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (568) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;33mW (576) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (587) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (593) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (600) coexist: coex firmware version: 68cf3ac[0m
+[0;32mI (606) coexist: coexist rom version 9387209[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (616) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) esp_rmaker_console: Initialising UART on port 0[0m
+[0;32mI (626) uart: queue free spaces: 8[0m
+[0;32mI (626) esp_rmaker_commands: Registering command: reboot[0m
+[0;32mI (636) esp_rmaker_commands: Registering command: up-time[0m
+[0;32mI (646) esp_rmaker_commands: Registering command: mem-dump[0m
+[0;32mI (646) esp_rmaker_commands: Registering command: task-dump[0m
+[0;32mI (656) esp_rmaker_commands: Registering command: cpu-dump[0m
+[0;32mI (656) esp_rmaker_commands: Registering command: sock-dump[0m
+[0;32mI (666) esp_rmaker_commands: Registering command: heap-trace[0m
+[0;32mI (676) esp_rmaker_commands: Registering command: reset-to-factory[0m
+[0;32mI (676) esp_rmaker_commands: Registering command: local-time[0m
+[0;32mI (686) esp_rmaker_commands: Registering command: tz-set[0m
+[0;32mI (696) esp_rmaker_commands: Registering command: add-user[0m
+[0;32mI (696) esp_rmaker_commands: Registering command: get-node-id[0m
+[0;32mI (706) esp_rmaker_commands: Registering command: wifi-prov[0m
+[0;32mI (706) esp_rmaker_commands: Registering command: cmd[0m
+[0;32mI (716) esp_rmaker_commands: Registering command: sign-data[0m
+[0;32mI (726) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (736) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (756) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (786) pp: pp rom version: 9387209[0m
+[0;32mI (786) net80211: net80211 rom version: 9387209[0m
+[0;32mI (796) wifi:wifi driver task: 3fcb0ea8, prio:23, stack:6656, core=0[0m
+[0;32mI (796) wifi:wifi firmware version: 82c12cc[0m
+[0;32mI (796) wifi:wifi certification version: v7.0[0m
+[0;32mI (796) wifi:config NVS flash: enabled[0m
+[0;32mI (796) wifi:config nano formating: disabled[0m
+[0;32mI (806) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (806) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (806) wifi:Init management short buffer num: 32[0m
+[0;32mI (816) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (816) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (826) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (826) wifi:Init static rx buffer num: 10[0m
+[0;32mI (826) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (836) wifi_init: rx ba win: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (856) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (866) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (876) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (886) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|64E83383ECC4[0m
+[0;32mI (886) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (886) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (906) app_main: RainMaker Initialised.[0m
+[0;32mI (906) esp_rmaker_node: Node ID ----- 64E83383ECC4[0m
+[0;32mI (916) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (916) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (926) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (936) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (936) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (946) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (946) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (956) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (956) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (966) tag: 0x3fcbb09c   e5 02 4e 6f 76 61 00 01  00 80 01 00              |..Nova......|[0m
+[0;32mI (976) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (986) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (986) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (996) esp_rmaker_local: Event 6[0m
+[0;32mI (996) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (1036) wifi:mode : sta (64:e8:33:83:ec:c4)[0m
+[0;32mI (1046) wifi:enable tsf[0m
+[0;32mI (3456) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3456) wifi:state: init -> auth (b0)[0m
+[0;32mI (3476) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3486) wifi:state: assoc -> run (10)[0m
+[0;32mI (13486) wifi:state: run -> init (cc00)[0m
+[0;32mI (13496) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (13496) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (15906) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (18316) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (18316) wifi:state: init -> auth (b0)[0m
+[0;32mI (18326) wifi:state: auth -> assoc (0)[0m
+[0;32mI (18336) wifi:state: assoc -> run (10)[0m
+[0;32mI (28336) wifi:state: run -> init (cc00)[0m
+[0;32mI (28346) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (28346) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (30756) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (33166) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (33166) wifi:state: init -> auth (b0)[0m
+[0;32mI (33176) wifi:state: auth -> assoc (0)[0m
+[0;32mI (33186) wifi:state: assoc -> run (10)[0m
+[0;32mI (43186) wifi:state: run -> init (cc00)[0m
+[0;32mI (43196) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (43196) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (45606) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (48016) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (48016) wifi:state: init -> auth (b0)[0m
+[0;32mI (48026) wifi:state: auth -> assoc (0)[0m
+[0;32mI (48036) wifi:state: assoc -> run (10)[0m
+[0;32mI (58036) wifi:state: run -> init (cc00)[0m
+[0;32mI (58046) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (58046) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (60456) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (62866) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (62866) wifi:state: init -> auth (b0)[0m
+[0;32mI (62876) wifi:state: auth -> assoc (0)[0m
+[0;32mI (62886) wifi:state: assoc -> run (10)[0m
+[0;32mI (72886) wifi:state: run -> init (cc00)[0m
+[0;32mI (72896) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (72896) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (75306) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (77716) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (77716) wifi:state: init -> auth (b0)[0m
+[0;32mI (77736) wifi:state: auth -> assoc (0)[0m
+[0;32mI (77746) wifi:state: assoc -> run (10)[0m
+[0;32mI (87746) wifi:state: run -> init (cc00)[0m
+[0;32mI (87756) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (87756) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (90166) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (92576) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (92576) wifi:state: init -> auth (b0)[0m
+[0;32mI (92586) wifi:state: auth -> assoc (0)[0m
+[0;32mI (92626) wifi:state: assoc -> run (10)[0m
+[0;32mI (102626) wifi:state: run -> init (cc00)[0m
+[0;32mI (102636) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (102636) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (105046) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (107456) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (107456) wifi:state: init -> auth (b0)[0m
+[0;32mI (107466) wifi:state: auth -> assoc (0)[0m
+[0;32mI (107476) wifi:state: assoc -> run (10)[0m
+[0;32mI (117476) wifi:state: run -> init (cc00)[0m
+[0;32mI (117486) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (117486) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (119896) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (122306) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (122306) wifi:state: init -> auth (b0)[0m
+[0;32mI (123316) wifi:state: auth -> init (200)[0m
+[0;32mI (123326) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (123326) app_wifi: Disconnected. Connecting to the AP again...[0m
+[0;32mI (125736) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (125736) wifi:state: init -> auth (b0)[0m
+[0;32mI (125786) wifi:state: auth -> assoc (0)[0m
+[0;32mI (125796) wifi:state: assoc -> run (10)[0m
+[0;32mI (125866) wifi:connected with tharshen, aid = 1, channel 6, BW20, bssid = ba:c6:b7:83:9b:16[0m
+[0;32mI (125876) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (125876) wifi:pm start, type: 1[0m
+
+[0;32mI (125876) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (125886) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (126006) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (127396) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (127396) app_network: Connected with IP Address:172.20.10.5[0m
+[0;32mI (127396) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (127406) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (127406) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (127416) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (127426) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (127436) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (127436) main_task: Returned from app_main()[0m
+[0;32mI (127436) esp_https_server: Starting server[0m
+[0;32mI (127446) esp_https_server: Server listening on port 8080[0m
+[0;32mI (127456) esp_rmaker_local: esp_local_ctrl service started with name : 64E83383ECC4[0m
+[0;32mI (127466) app_main: Local Control Started.[0m
+[0;32mI (127466) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (127476) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (127486) wifi:<ba-add>idx:0 (ifx:0, ba:c6:b7:83:9b:16), tid:0, ssn:2, winSize:64[0m
+[0;32mI (128466) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (130786) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (130786) app_main: MQTT Connected.[0m
+[0;32mI (130786) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (130796) esp_rmaker_node_config: Generated Node config of length 1641[0m
+[0;32mI (130806) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (130806) esp_rmaker_param: Reporting params (init): {"Lights":{"Name":"Lights","Power":true},"Intruder Alert Reset":{"Reset":false},"Time":{"TZ":"Asia/Kuala_Lumpur","TZ-POSIX":"<+08>-8"},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]},"Local Control":{"POP":"58659ea1","Type":1}}[0m
+[0;32mI (130826) esp_rmaker_ota_using_topics: Subscribing to: node/64E83383ECC4/otaurl[0m
+[0;32mI (131236) app_main: MQTT Published. Msg id: 59302.[0m
+[0;32mI (131856) app_main: MQTT Published. Msg id: 45143.[0m
+[0;32mI (131856) app_main: MQTT Published. Msg id: 51531.[0m
+[0;31mE (134646) security1: Secure session not established[0m
+[0;31mE (134646) protocomm: Decryption of response failed for endpoint esp_local_ctrl/control[0m
+[0;31mE (134646) protocomm_httpd: Data handler failed[0m
+[0;33mW (134656) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (134656) protocomm_httpd: Resetting socket session id as socket 58was closed[0m
+[0;33mW (134666) protocomm_httpd: Closing session with ID: 135808075[0m
+[0;33mW (134926) protocomm_httpd: Closing session with ID: 494670049[0m
+[0;33mW (135186) protocomm_httpd: Closing session with ID: 2084883751[0m
+[0;33mW (135426) protocomm_httpd: Closing session with ID: 1931710149[0m
+[0;31mE (135426) security1: Invalid state of session 1 (expected 0)[0m
+[0;31mE (135436) security1: Session setup error 259[0m
+[0;31mE (135436) protocomm_httpd: Data handler failed[0m
+[0;33mW (135446) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (135446) protocomm_httpd: Resetting socket session id as socket 59was closed[0m
+[0;33mW (135456) protocomm_httpd: Closing session with ID: 2495490520[0m
+[0;31mE (135466) security1: Invalid state of session 1 (expected 0)[0m
+[0;31mE (135466) security1: Session setup error 259[0m
+[0;31mE (135476) protocomm_httpd: Data handler failed[0m
+[0;33mW (135476) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (135486) protocomm_httpd: Resetting socket session id as socket 60was closed[0m
+[0;33mW (135496) protocomm_httpd: Closing session with ID: 2154111408[0m
+[0;31mE (135496) security1: Invalid state of session 1 (expected 0)[0m
+[0;31mE (135506) security1: Session setup error 259[0m
+[0;31mE (135516) protocomm_httpd: Data handler failed[0m
+[0;33mW (135516) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (135526) protocomm_httpd: Resetting socket session id as socket 58was closed[0m
+[0;32mI (135836) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (136456) app_main: MQTT Published. Msg id: 23727.[0m
+[0;33mW (144456) protocomm_httpd: Closing session with ID: 2599792579[0m
+[0;32mI (144726) app_network: Secured session established![0m
+[0;32mI (144766) esp_rmaker_param: Received params: {"Lights":{"Power":false}}[0m
+[0;32mI (144766) esp_rmaker_param: Found 1 params in write request for Lights[0m
+[0;32mI (144776) esp_rmaker_param: Reporting params: {"Lights":{"Power":false}}[0m
+[0;32mI (145056) esp_rmaker_param: Received params: {"Lights":{"Power":true}}[0m
+[0;32mI (145056) esp_rmaker_param: Found 1 params in write request for Lights[0m
+[0;32mI (145056) esp_rmaker_param: Reporting params: {"Lights":{"Power":true}}[0m
+[0;32mI (145096) app_main: MQTT Published. Msg id: 3986.[0m
+[0;32mI (145466) app_main: MQTT Published. Msg id: 61025.[0m
+[0;32mI (147826) esp_rmaker_param: Received params: {"Lights":{"Power":false}}[0m
+[0;32mI (147826) esp_rmaker_param: Found 1 params in write request for Lights[0m
+[0;32mI (147836) esp_rmaker_param: Reporting params: {"Lights":{"Power":false}}[0m
+[0;32mI (148436) app_main: MQTT Published. Msg id: 11500.[0m
+[0;32mI (148436) esp_rmaker_param: Received params: {"Lights":{"Power":true}}[0m
+[0;32mI (148436) esp_rmaker_param: Found 1 params in write request for Lights[0m
+[0;32mI (148446) esp_rmaker_param: Reporting params: {"Lights":{"Power":true}}[0m
+[0;32mI (148946) app_main: MQTT Published. Msg id: 26355.[0m
+[0;32mI (153046) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (153046) esp_rmaker_time: The current time is: Mon Apr 14 12:12:03 2025 +0800[+08], DST: No.[0m

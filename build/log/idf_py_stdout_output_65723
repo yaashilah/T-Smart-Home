@@ -1,0 +1,76 @@
+-- Found Git: /usr/bin/git (found version "2.30.1 (Apple Git-130)")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/tharshen/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/tharshen/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/tharshen/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/esp/esp-rainmaker/examples/iot_project/main/idf_component.yml
+NOTICE: Using component placed at /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker for dependency "espressif/esp_rainmaker", specified in /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_insights/idf_component.yml
+NOTICE: Processing 17 dependencies:
+NOTICE: [1/17] espressif/cbor (0.6.0~1)
+NOTICE: [2/17] espressif/esp-serial-flasher (0.0.11)
+NOTICE: [3/17] espressif/esp_diag_data_store (1.0.2)
+NOTICE: [4/17] espressif/esp_diagnostics (1.2.1)
+NOTICE: [5/17] espressif/esp_insights (1.2.4)
+NOTICE: [6/17] espressif/esp_rainmaker (1.5.4) (/Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker)
+NOTICE: [7/17] espressif/esp_rcp_update (1.2.0)
+NOTICE: [8/17] espressif/esp_schedule (1.2.0)
+NOTICE: [9/17] espressif/esp_secure_cert_mgr (2.5.0)
+NOTICE: [10/17] espressif/jsmn (1.1.0)
+NOTICE: [11/17] espressif/json_generator (1.1.2)
+NOTICE: [12/17] espressif/json_parser (1.0.3)
+NOTICE: [13/17] espressif/mdns (1.8.2)
+NOTICE: [14/17] espressif/network_provisioning (1.0.5)
+NOTICE: [15/17] espressif/qrcode (0.1.0~2)
+NOTICE: [16/17] espressif/rmaker_common (1.4.6)
+NOTICE: [17/17] idf (5.1.6)
+-- Project sdkconfig file /Users/tharshen/esp/esp-rainmaker/examples/iot_project/sdkconfig
+Loading defaults file /Users/tharshen/esp/esp-rainmaker/examples/iot_project/sdkconfig.defaults...
+/Users/tharshen/esp/esp-rainmaker/examples/iot_project/sdkconfig.defaults:33 CONFIG_ESP_RMAKER_LOCAL_CTRL_ENABLE was replaced with CONFIG_ESP_RMAKER_LOCAL_CTRL_AUTO_ENABLE
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /Users/tharshen/.espressif/python_env/idf5.1_py3.12_env/bin/python (found version "3.12.4") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "iot_project" version: 1a712a0
+-- Adding linker script /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script /Users/tharshen/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_insights app_network app_reset app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_rainmaker esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__cbor espressif__esp-serial-flasher espressif__esp_diag_data_store espressif__esp_diagnostics espressif__esp_insights espressif__esp_rcp_update espressif__esp_schedule espressif__esp_secure_cert_mgr espressif__jsmn espressif__json_generator espressif__json_parser espressif__mdns espressif__network_provisioning espressif__qrcode espressif__rmaker_common esptool_py fatfs freertos gpio_button hal heap http_parser idf_test ieee802154 json ledc_driver log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant ws2812_led
+-- Component paths: /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_insights /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_network /Users/tharshen/.espressif/esp-rainmaker/examples/common/app_reset /Users/tharshen/esp/esp-idf/components/app_trace /Users/tharshen/esp/esp-idf/components/app_update /Users/tharshen/esp/esp-idf/components/bootloader /Users/tharshen/esp/esp-idf/components/bootloader_support /Users/tharshen/esp/esp-idf/components/bt /Users/tharshen/esp/esp-idf/components/cmock /Users/tharshen/esp/esp-idf/components/console /Users/tharshen/esp/esp-idf/components/cxx /Users/tharshen/esp/esp-idf/components/driver /Users/tharshen/esp/esp-idf/components/efuse /Users/tharshen/esp/esp-idf/components/esp-tls /Users/tharshen/esp/esp-idf/components/esp_adc /Users/tharshen/esp/esp-idf/components/esp_app_format /Users/tharshen/esp/esp-idf/components/esp_coex /Users/tharshen/esp/esp-idf/components/esp_common /Users/tharshen/esp/esp-idf/components/esp_eth /Users/tharshen/esp/esp-idf/components/esp_event /Users/tharshen/esp/esp-idf/components/esp_gdbstub /Users/tharshen/esp/esp-idf/components/esp_hid /Users/tharshen/esp/esp-idf/components/esp_http_client /Users/tharshen/esp/esp-idf/components/esp_http_server /Users/tharshen/esp/esp-idf/components/esp_https_ota /Users/tharshen/esp/esp-idf/components/esp_https_server /Users/tharshen/esp/esp-idf/components/esp_hw_support /Users/tharshen/esp/esp-idf/components/esp_lcd /Users/tharshen/esp/esp-idf/components/esp_local_ctrl /Users/tharshen/esp/esp-idf/components/esp_mm /Users/tharshen/esp/esp-idf/components/esp_netif /Users/tharshen/esp/esp-idf/components/esp_netif_stack /Users/tharshen/esp/esp-idf/components/esp_partition /Users/tharshen/esp/esp-idf/components/esp_phy /Users/tharshen/esp/esp-idf/components/esp_pm /Users/tharshen/esp/esp-idf/components/esp_psram /Users/tharshen/esp/esp-rainmaker/components/esp_rainmaker /Users/tharshen/esp/esp-idf/components/esp_ringbuf /Users/tharshen/esp/esp-idf/components/esp_rom /Users/tharshen/esp/esp-idf/components/esp_system /Users/tharshen/esp/esp-idf/components/esp_timer /Users/tharshen/esp/esp-idf/components/esp_wifi /Users/tharshen/esp/esp-idf/components/espcoredump /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__cbor /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp-serial-flasher /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_diag_data_store /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_diagnostics /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_insights /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_rcp_update /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_schedule /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__esp_secure_cert_mgr /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__jsmn /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__json_generator /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__json_parser /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__mdns /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__network_provisioning /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__qrcode /Users/tharshen/esp/esp-rainmaker/examples/iot_project/managed_components/espressif__rmaker_common /Users/tharshen/esp/esp-idf/components/esptool_py /Users/tharshen/esp/esp-idf/components/fatfs /Users/tharshen/esp/esp-idf/components/freertos /Users/tharshen/.espressif/esp-rainmaker/examples/common/gpio_button /Users/tharshen/esp/esp-idf/components/hal /Users/tharshen/esp/esp-idf/components/heap /Users/tharshen/esp/esp-idf/components/http_parser /Users/tharshen/esp/esp-idf/components/idf_test /Users/tharshen/esp/esp-idf/components/ieee802154 /Users/tharshen/esp/esp-idf/components/json /Users/tharshen/.espressif/esp-rainmaker/examples/common/ledc_driver /Users/tharshen/esp/esp-idf/components/log /Users/tharshen/esp/esp-idf/components/lwip /Users/tharshen/esp/esp-rainmaker/examples/iot_project/main /Users/tharshen/esp/esp-idf/components/mbedtls /Users/tharshen/esp/esp-idf/components/mqtt /Users/tharshen/esp/esp-idf/components/newlib /Users/tharshen/esp/esp-idf/components/nvs_flash /Users/tharshen/esp/esp-idf/components/openthread /Users/tharshen/esp/esp-idf/components/partition_table /Users/tharshen/esp/esp-idf/components/protobuf-c /Users/tharshen/esp/esp-idf/components/protocomm /Users/tharshen/esp/esp-idf/components/pthread /Users/tharshen/esp/esp-idf/components/riscv /Users/tharshen/esp/esp-idf/components/sdmmc /Users/tharshen/esp/esp-idf/components/soc /Users/tharshen/esp/esp-idf/components/spi_flash /Users/tharshen/esp/esp-idf/components/spiffs /Users/tharshen/esp/esp-idf/components/tcp_transport /Users/tharshen/esp/esp-idf/components/ulp /Users/tharshen/esp/esp-idf/components/unity /Users/tharshen/esp/esp-idf/components/usb /Users/tharshen/esp/esp-idf/components/vfs /Users/tharshen/esp/esp-idf/components/wear_levelling /Users/tharshen/esp/esp-idf/components/wifi_provisioning /Users/tharshen/esp/esp-idf/components/wpa_supplicant /Users/tharshen/.espressif/esp-rainmaker/examples/common/ws2812_led
+-- Configuring done (16.2s)
+-- Generating done (1.4s)
+-- Build files have been written to: /Users/tharshen/esp/esp-rainmaker/examples/iot_project/build
